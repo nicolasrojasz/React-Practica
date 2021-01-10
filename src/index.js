@@ -1,17 +1,60 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import React from 'react'
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+import ReactDom from 'react-dom'
+//librerias que si o si se tienen que importar para usar react
+
+const user = {
+
+  firstName: 'nicolas',
+  lastName: 'rojas',
+  avatar: 'http://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-256.png'
+}
+
+
+function getName(user) {
+  //recibe el objeto
+
+
+  return `${user.firstName} ${user.lastName}`
+
+
+}
+
+
+
+function condicional(user) {
+
+  if (user) {
+    //si existe un objeto entonces haga algo
+
+    return <h1>Hola {getName(user)}</h1>
+
+  }
+
+  return <h1>Hola Extraño</h1>
+
+}
+
+//eso que parece html es jsx es una libreria de js que brinda la facilidad de almacenar codigo parecid al html
+//pero que a su vez se pueden llamar varibales u objetos, funciones, etc
+
+  const element = (
+    <div>
+      <h1>{condicional(user)}</h1>
+      <img src={user.avatar} />
+    </div>
+  )
+//asi se crean hijos en jsx
+
+
+const container = document.getElementById('root')
+//variable que contiene el espacio del index donde se va a almacenar la informacion
+
+
+//ReactDom.render(__QUE__DONDE__)
+
+ReactDom.render(element, container)
+
+//Esta metodo se usa para unir componentes y hacerlas visibles en el index agregando la variable donde contiene
+//el espacio donde se va a mandar la informacion 
