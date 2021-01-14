@@ -3,6 +3,7 @@ import React from 'react'
 
 import ExerciseList from '../components/ExerciseList'
 import Welcome from '../components/Welcome'
+import Hexagono from '../components/Hexagono'
 //se importa el componente
 
 class Exercises extends React.Component{
@@ -51,6 +52,8 @@ render(){
                 <ExerciseList
                      exercises={this.state.data}
                 />
+
+                <Hexagono/>
                 
             </div>
     )

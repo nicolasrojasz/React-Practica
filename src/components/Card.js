@@ -35,7 +35,7 @@ class Card extends React.Component{
         
     render(){
         
-        //esta funcion lo que hace es pintar lo que este dentro, es vital y siempre se debe poner cuando se cre
+        //esta funcion lo que hace es pintar lo que este dentro, es vital y siempre se debe poner cuando se crea
         //un componente
         return (
      

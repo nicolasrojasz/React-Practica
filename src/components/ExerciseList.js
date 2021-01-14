@@ -2,6 +2,7 @@ import React from'react'
 import Card from './Card'
 function ExerciseList(props){
     //creamos un componente funcional ya que no vemos la necesidad de manejar el ciclo de vida del componente
+      
     return(
         <div>
             
