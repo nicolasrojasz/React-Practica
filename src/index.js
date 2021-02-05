@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 //librerias que si o si se tienen que importar para usar react
-import Exercises from './pages/Exercises'
+
 import App from './components/App'
 //se importa el componente
 

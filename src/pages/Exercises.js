@@ -3,7 +3,7 @@ import React from 'react'
 
 import ExerciseList from '../components/ExerciseList'
 import Welcome from '../components/Welcome'
-import Hexagono from '../components/Hexagono'
+import Boton from '../components/Boton'
 //se importa el componente
 
 class Exercises extends React.Component{
@@ -53,7 +53,7 @@ render(){
                      exercises={this.state.data}
                 />
 
-                <Hexagono/>
+                <Boton/>
                 
             </div>
     )
